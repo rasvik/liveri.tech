@@ -1,0 +1,63 @@
+{% block content %}
+
+<h2> Liver Disease Test</h2>
+<form action="" method="post">
+    <p>
+        {{form.age.label}} <br>
+        {{form.age(size=30)}}
+    </p>
+    <p>
+        {{form.gender.label}} <br>
+        {{form.gender(size=2)}}
+    </p>
+    <p>
+        {{form.total_bilirubin.label}} <br>
+        {{form.total_bilirubin(size=30)}}
+    </p>
+    <p>
+        {{form.direct_bilirubin.label}} <br>
+        {{form.direct_bilirubin(size=30)}}
+    </p>
+    <p>
+        {{form.alkaline_phosphate.label}} <br>
+        {{form.alkaline_phosphate(size=30)}}
+    </p>
+    <p>
+        {{form.alamine_aminotransferase.label}} <br>
+        {{form.alamine_aminotransferase(size=30)}}
+    </p>
+    <p>
+        {{form.aspartate_aminotransferase.label}} <br>
+        {{form.aspartate_aminotransferase(size=30)}}
+    </p>
+    <p>
+        {{form.total_proteins.label}} <br>
+        {{form.total_proteins(size=30)}}
+    </p>
+    <p>
+        {{form.albumin.label}} <br>
+        {{form.albumin(size=30)}}
+    </p>
+    <p>
+        {{form.albumin_and_globulin_ratio.label}} <br>
+        {{form.albumin_and_globulin_ratio(size=30)}}
+    </p>
+    <p>
+        {{form.accept_tos.label}} <br>
+        {{form.accept_tos(size=30)}}
+    </p>
+
+
+        {% if result %}
+    <p> Prediction: {{ result }} </p>
+    {% endif %}
+
+
+    <p>{{form.submit()}}</p>
+
+
+
+
+</form>
+
+{% endblock %}

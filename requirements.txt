@@ -1,0 +1,10 @@
+flask
+Werkzeug
+flask_wtf
+keras
+pandas
+numpy
+tensorflow
+sklearn
+wtforms
+gunicorn
